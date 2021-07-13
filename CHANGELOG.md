@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0.1 (2021/07/13)
+
+Fix usage with kotlin 1.5
+
+#### Enhancements:
+
 ## 1.4.0.0 (2020/07/25)
 
 #### Enhancements:

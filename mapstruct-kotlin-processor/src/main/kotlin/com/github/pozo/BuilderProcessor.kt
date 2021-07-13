@@ -29,8 +29,8 @@ class BuilderProcessor : AbstractProcessor() {
     override fun process(annotations: Set<TypeElement>, roundEnv: RoundEnvironment): Boolean {
         val (dataClasses, nonDataClasses) = roundEnv.getElementsAnnotatedWith(KotlinBuilder::class.java)
             .filterIsInstance<TypeElement>()
-            .filter { isAnnotatedByKotlin(it) }
-            .partition { isDataClass(it) }
+            .filter(::isAnnotatedByKotlin)
+            .partition(::isDataClass)
 
         nonDataClasses.forEach {
             processingEnv.messager.printMessage(
