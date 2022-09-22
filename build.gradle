@@ -5,11 +5,11 @@ allprojects {
 
 buildscript {
     ext {
-        kotlin_version = '1.5.20'
-        kotlinxMetadataVersion = '0.3.0'
+        kotlin_version = '1.6.21'
+        kotlinxMetadataVersion = '0.5.0'
         kotlinBuilderAnnotationVersion = '1.0-SNAPSHOT'
         autoServiceVersion = '1.0-rc7'
-        mapstructVersion = '1.4.0.Beta3'
+        mapstructVersion = '1.5.2.Final'
         javaPoetVersion = '1.11.1'
     }
 
